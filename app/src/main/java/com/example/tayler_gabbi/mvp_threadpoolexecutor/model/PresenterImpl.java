@@ -1,6 +1,7 @@
 package com.example.tayler_gabbi.mvp_threadpoolexecutor.model;
 
 
+import com.example.tayler_gabbi.mvp_threadpoolexecutor.interactor.LoginInteractorImpl;
 import com.example.tayler_gabbi.mvp_threadpoolexecutor.interfas.LoginInteractor;
 import com.example.tayler_gabbi.mvp_threadpoolexecutor.interfas.OnLoginFinishListener;
 import com.example.tayler_gabbi.mvp_threadpoolexecutor.presenter.LoginPresenter;
@@ -13,7 +14,7 @@ public class PresenterImpl implements LoginPresenter,OnLoginFinishListener {
 
     public PresenterImpl(LoginView loginView) {
         this.loginView = loginView;
-        //this.loginInteractor = new LoginInteractorImpl();
+        this.loginInteractor = new LoginInteractorImpl();
     }
 
     @Override

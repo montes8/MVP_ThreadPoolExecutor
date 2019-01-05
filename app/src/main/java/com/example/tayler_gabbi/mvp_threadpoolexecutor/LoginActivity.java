@@ -24,31 +24,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
         editPass = findViewById(R.id.edit_pasword);
         logearse = findViewById(R.id.button_ingresar);
 
-     /*   DefaultExecutorSupplier.getInstance().forBackgroundTasks().execute(new Runnable() {
 
-            @Override public void run() {
-
-                final Usuario usuario = DemoApplication.dataBase.usuarioDao().userLOgin(nombre.getText().toString(),contasenia.getText().toString());
-
-
-                DefaultExecutorSupplier.getInstance().forMainThreadTasks().execute(new Runnable() {
-                    @Override public void run() {
-
-                        if (usuario != null){
-                            Toast.makeText(LoginActivity.this,"Bienvenida"+usuario.getNombre(),Toast.LENGTH_SHORT).show();
-                            Intent inten = new Intent(LoginActivity.this,HomeActivity.class);
-                            startActivity(inten);
-                        }else{
-
-                            Toast.makeText(LoginActivity.this,"Usuario o contraseña incorrectos",Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-
-            }
-        });
-    }
-});*/
     }
 
     @Override

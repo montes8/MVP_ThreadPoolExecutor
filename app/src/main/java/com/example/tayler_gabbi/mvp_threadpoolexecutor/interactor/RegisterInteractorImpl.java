@@ -6,11 +6,8 @@ import com.example.tayler_gabbi.mvp_threadpoolexecutor.DemoApplication;
 import com.example.tayler_gabbi.mvp_threadpoolexecutor.database.model.Usuario;
 import com.example.tayler_gabbi.mvp_threadpoolexecutor.interfas.OnRegisterFinishListener;
 import com.example.tayler_gabbi.mvp_threadpoolexecutor.interfas.RegisterInteractor;
-import com.example.tayler_gabbi.mvp_threadpoolexecutor.presenter.RegisterPresenter;
 
 public class RegisterInteractorImpl implements RegisterInteractor {
-
-    private RegisterPresenter registerPresenter;
 
 
     @Override

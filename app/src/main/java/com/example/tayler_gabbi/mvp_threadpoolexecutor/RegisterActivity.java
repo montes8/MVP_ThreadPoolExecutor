@@ -3,10 +3,12 @@ package com.example.tayler_gabbi.mvp_threadpoolexecutor;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.tayler_gabbi.mvp_threadpoolexecutor.model.RegisterPresenterImpl;
 import com.example.tayler_gabbi.mvp_threadpoolexecutor.presenter.RegisterPresenter;
 import com.example.tayler_gabbi.mvp_threadpoolexecutor.view.RegisterView;
 
@@ -27,7 +29,16 @@ public class RegisterActivity extends AppCompatActivity implements RegisterView{
         contrasenia = findViewById(R.id.edit_text_password);
         btnRegistrar = findViewById(R.id.button_register_ingresar);
 
-        //registrarPresenter.RegisterSucces(nombre.getText().toString(),usuario.getText().toString(),contrasenia.getText().toString(),usuarioDao);
+        registrarPresenter = new RegisterPresenterImpl(this);
+
+        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                registrarPresenter.RegisterSucces(nombre.getText().toString(),usuario.getText().toString(),contrasenia.getText().toString());
+            }
+        });
+
     }
 
     @Override

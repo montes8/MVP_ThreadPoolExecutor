@@ -14,14 +14,6 @@ public class Usuario {
     private String nombreUsuario;
     private String contrasenia;
 
-
-    public Usuario(Long idUsu, String nombre, String nombreUsuario, String contrasenia) {
-        this.idUsu = idUsu;
-        this.nombre = nombre;
-        this.nombreUsuario = nombreUsuario;
-        this.contrasenia = contrasenia;
-    }
-
     public Long getIdUsu() {
         return idUsu;
     }
